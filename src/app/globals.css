@@ -24,3 +24,61 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.skin {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./laptop.jpg);
+  background-color: #1a1a1a6e;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.nav {
+  /* padding: 10px 50px; */
+}
+
+.navItem {
+  padding: 5px 15px;
+  margin: 5px;
+  background-color: rgb(75, 75, 75);
+  border: none;
+  box-shadow: 0 1px 4px gray;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.navItem:hover {
+  color: gray;
+
+}
+
+.profile {
+  padding: 10px;
+  border-bottom: 1px solid gainsboro;
+  border-right: 1px solid gainsboro;
+}
+
+.profileImage {
+  align-self: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(./passport_size_photo.jpg);
+  height: 100px;
+  width: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.profileImage img {
+  border-radius: 5px;
+}
+
+.profileDescription {
+  align-self: center;
+  color: white;
+}
