@@ -33,7 +33,12 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  overflow: hidden;
+  overflow-x: hidden;
+}
+
+.profileDescription p::first-letter {
+  font-size: 3em;
+  font-style: italic;
 }
 
 .nav {
@@ -81,4 +86,10 @@ body {
 .profileDescription {
   align-self: center;
   color: white;
+}
+
+footer {
+  text-align: center;
+  color: white;
+  margin: 20px;
 }
