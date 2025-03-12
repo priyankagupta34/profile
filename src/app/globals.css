@@ -19,6 +19,11 @@
   }
 }
 
+* {
+  line-height: 35px;
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
@@ -26,7 +31,7 @@ body {
 }
 
 .skin {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./laptop.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./images/laptop.jpg);
   background-color: #1a1a1a6e;
   height: 100vh;
   background-position: center;
@@ -42,7 +47,9 @@ body {
 }
 
 .nav {
-  /* padding: 10px 50px; */
+  border-bottom: 1px solid gray;
+  padding: 20px 0;
+  backdrop-filter: blur(10px);
 }
 
 .navItem {
@@ -50,7 +57,7 @@ body {
   margin: 5px;
   background-color: rgb(75, 75, 75);
   border: none;
-  box-shadow: 0 1px 4px gray;
+  box-shadow: 0 1px 2px white;
   border-radius: 5px;
   color: white;
   cursor: pointer;
@@ -64,19 +71,18 @@ body {
 
 .profile {
   padding: 10px;
-  border-bottom: 1px solid gainsboro;
-  border-right: 1px solid gainsboro;
+  border-bottom: 1px solid gray;
+  border-right: 1px solid gray;
+  height: 75vh;
 }
 
 .profileImage {
   align-self: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(./passport_size_photo.jpg);
+  width: 134px;
   height: 100px;
-  width: 100px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 5px;
+  border-radius: 12px;
+  align-self: center;
+  box-shadow: 0 0 4px 2px gray;
 }
 
 .profileImage img {
@@ -86,10 +92,60 @@ body {
 .profileDescription {
   align-self: center;
   color: white;
+  line-height: 35px;
 }
 
 footer {
   text-align: center;
   color: white;
   margin: 20px;
+}
+
+.icon {
+  padding: 10px;
+  border: 1px solid gray;
+  margin: 0 5px;
+  border-radius: 50%;
+  font-size: 2em;
+  transition: all 0.3s;
+}
+
+.icon:hover {
+  color: gray;
+}
+
+.companywise {
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 1px 2px 4px white;
+}
+
+.companywise img {
+  width: 300px;
+  height: 130px;
+  border-radius: 5px;
+}
+
+.companyname {
+  font-size: 2em;
+  font-weight: 100;
+  color: rgb(28, 28, 94);
+}
+
+.title {
+  font-size: 2.3em;
+  color: gainsboro;
+  text-align: center;
+}
+
+.pointerTitle {
+  font-size: 1.3em;
+  color: rgb(2, 23, 106);
+  margin: 10px 0;
+}
+
+.companyIntro {
+  flex-basis: 300px;
+  flex-shrink: 0;
 }

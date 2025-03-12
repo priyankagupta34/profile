@@ -1,13 +1,16 @@
+"use client";
+
 import Navigation from "@/components/Navigation";
-import ProfileHome from "@/components/Home";
+import ProfessionalCareer from "@/components/ProfessionalCareer";
+import ProfileHome from "@/components/ProfileHome";
 
 export default function Home() {
 	return (
-		<div className="w-screen skin px-20 pt-5">
-			<div className=" flex flex-col gap-50 ">
+		<div className="w-screen skin px-20">
+			<div className=" flex flex-col gap-10 ">
 				<Navigation />
 				<ProfileHome />
-				{/* <section></section> */}
+				<ProfessionalCareer />
 				{/* <section></section> */}
 				<footer>Created With &#10084;&#65039; by Priyanka</footer>
 			</div>
