@@ -5,52 +5,43 @@ export default function Navigation() {
 
 	if (!mounted) return null;
 
+	const clickHandler = (id: string) => {
+		document
+			?.getElementById(id)
+			?.scrollIntoView({ behavior: "smooth", block: "start" });
+	};
+
 	return (
 		<nav className="text-white nav sticky top-0 flex justify-between">
 			<h1 className="self-center text-3xl font-extralight">Priyanka Gupta</h1>
-			<div className="flex flex-row-reverse ">
+			<div className="flex flex-row ">
 				<button
 					type="button"
 					className="navItem"
-					onClick={() => {
-						const element = document.getElementById("experience");
-						const offset = 100;
-
-						if (element) {
-							// Adjust as needed
-
-							const elementPosition =
-								element.getBoundingClientRect().top + window.scrollY;
-							window.scrollTo({
-								top: elementPosition - offset,
-								behavior: "smooth",
-							});
-						}
-					}}
+					onClick={() => clickHandler("aboutme")}
 				>
-					Experience
+					About Me
 				</button>
 				<button
 					type="button"
 					className="navItem"
-					onClick={() =>
-						document
-							?.getElementById("education")
-							?.scrollIntoView({ behavior: "smooth" })
-					}
+					onClick={() => clickHandler("education")}
 				>
 					Education
 				</button>
 				<button
 					type="button"
 					className="navItem"
-					onClick={() =>
-						document
-							?.getElementById("aboutme")
-							?.scrollIntoView({ behavior: "smooth" })
-					}
+					onClick={() => clickHandler("skills")}
 				>
-					About Me
+					Skills
+				</button>
+				<button
+					type="button"
+					className="navItem"
+					onClick={() => clickHandler("experience")}
+				>
+					Experience
 				</button>
 			</div>
 		</nav>

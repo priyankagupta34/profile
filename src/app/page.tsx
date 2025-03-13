@@ -1,8 +1,10 @@
 "use client";
 
+import Education from "@/components/Education";
 import Navigation from "@/components/Navigation";
 import ProfessionalCareer from "@/components/ProfessionalCareer";
 import ProfileHome from "@/components/ProfileHome";
+import Skills from "@/components/Skills";
 
 export default function Home() {
 	return (
@@ -10,8 +12,9 @@ export default function Home() {
 			<div className=" flex flex-col gap-10 ">
 				<Navigation />
 				<ProfileHome />
+				<Education />
+				<Skills />
 				<ProfessionalCareer />
-				{/* <section></section> */}
 				<footer>Created With &#10084;&#65039; by Priyanka</footer>
 			</div>
 		</div>
