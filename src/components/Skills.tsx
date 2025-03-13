@@ -4,15 +4,15 @@ export default function Skills() {
 		{ name: "NodeJs", exp: currYear - 2018 },
 		{ name: "NextJs", exp: currYear - 2018 },
 		{ name: "ReactJs", exp: currYear - 2018 },
-		{ name: "Javascript", exp: currYear - 2016 },
+		{ name: "Angular", exp: currYear - 2019 },
 		{ name: "Typescript", exp: currYear - 2018 },
 		{ name: "Python", exp: currYear - 2018 },
 		{ name: "HTML", exp: currYear - 2018 },
 		{ name: "CSS", exp: currYear - 2018 },
 		{ name: "MongoDB", exp: currYear - 2018 },
 		{ name: "SQLDB", exp: currYear - 2018 },
-		{ name: "Kubernetes", exp: currYear - 2018 },
-		{ name: "Docker", exp: currYear - 2018 },
+		{ name: "Kubernetes", exp: currYear - 2019 },
+		{ name: "Docker", exp: currYear - 2019 },
 	];
 	return (
 		<section className="flex flex-col gap-20" id="skills">
