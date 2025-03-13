@@ -1,4 +1,5 @@
 import useMounted from "@/hooks/useMounted";
+import IconLink from "./IconLink";
 
 export default function Navigation() {
 	const mounted = useMounted();
@@ -17,32 +18,38 @@ export default function Navigation() {
 			<div className="flex flex-row ">
 				<button
 					type="button"
-					className="navItem"
+					className="navItem bg-gray-700"
 					onClick={() => clickHandler("aboutme")}
 				>
 					About Me
 				</button>
 				<button
 					type="button"
-					className="navItem"
+					className="navItem bg-gray-700"
 					onClick={() => clickHandler("education")}
 				>
 					Education
 				</button>
 				<button
 					type="button"
-					className="navItem"
+					className="navItem bg-gray-700"
 					onClick={() => clickHandler("skills")}
 				>
 					Skills
 				</button>
 				<button
 					type="button"
-					className="navItem"
+					className="navItem bg-gray-700"
 					onClick={() => clickHandler("experience")}
 				>
 					Experience
 				</button>
+				<IconLink
+					icon="download"
+					title="download resume"
+					backgroundColor="bg-gray-700"
+					onClick={() => window.open("/PRIYANKA_GUPTA.pdf", "_blank")}
+				/>
 			</div>
 		</nav>
 	);

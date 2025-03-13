@@ -55,7 +55,6 @@ body {
 .navItem {
   padding: 5px 15px;
   margin: 5px;
-  background-color: rgb(75, 75, 75);
   border: none;
   box-shadow: 0 1px 2px white;
   border-radius: 5px;
@@ -182,4 +181,14 @@ footer {
   text-shadow: 0 0 gray;
   color: rgb(163, 163, 163);
   line-height: 11px;
+}
+
+.mem {
+  height: 100vh;
+  width: 95vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  font-style: italic;
 }

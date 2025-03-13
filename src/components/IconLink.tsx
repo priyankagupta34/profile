@@ -2,10 +2,16 @@ import { useCallback } from "react";
 import { FaGithub } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import { FaLinkedinIn } from "react-icons/fa";
+import { MdOutlineFileDownload } from "react-icons/md";
 
 export default function IconLink({
 	icon,
-}: { icon: "github" | "leetcode" | "linkedin" }) {
+	backgroundColor = "bg-transparent",
+	...props
+}: {
+	icon: "github" | "leetcode" | "linkedin" | "download";
+	backgroundColor?: string;
+} & React.ButtonHTMLAttributes<HTMLButtonElement>) {
 	const iconFound = useCallback(() => {
 		switch (icon) {
 			case "github":
@@ -14,6 +20,8 @@ export default function IconLink({
 				return <SiLeetcode />;
 			case "linkedin":
 				return <FaLinkedinIn />;
+			case "download":
+				return <MdOutlineFileDownload />;
 			default:
 				return <span />;
 		}
@@ -30,6 +38,9 @@ export default function IconLink({
 				break;
 			case "linkedin":
 				href = "https://www.linkedin.com/in/priyanka-gupta-/";
+				break;
+			case "download":
+				return;
 		}
 		window.open(href, "_blank");
 	};
@@ -37,8 +48,9 @@ export default function IconLink({
 	return (
 		<button
 			type="button"
-			className="icon cursor-pointer"
+			className={`icon cursor-pointer ${backgroundColor}`}
 			onClick={clickHandler}
+			{...props}
 		>
 			{iconFound()}
 		</button>
