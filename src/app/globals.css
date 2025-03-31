@@ -170,6 +170,7 @@ footer {
   background-color: white;
   align-items: center;
   transition: all 0.3s;
+  flex: auto;
 }
 
 .skill:hover {
